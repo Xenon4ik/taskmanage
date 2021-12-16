@@ -70,7 +70,7 @@ def sentence_analysis(book_id):
 @APP.route('/api/word_analysis/<word_analysis_file>')
 def word_analysis_for_api(word_analysis_file):
     with open(cfg.datapath(word_analysis_file)) as f:
-        return flask.render_template('word_analysis.html', wew=yaml.safe_load(f))
+        return flask.render_templa`te('word_analysis.html', wew=yaml.safe_load(f))
 
 @APP.route('/api/sentence_analysis/<sentence_analysis_file>')
 def sentence_analysis_for_api(sentence_analysis_file):
